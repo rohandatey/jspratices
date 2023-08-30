@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+
+<style>
+ body{
+    height: 100%;
+    width: 100%;
+ }
+ #joke{
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+ }
+</style>
+
+<body>
+    <div id="joke">this is a sample joke</div>
+</body>
+
+<script>
+   let myjokes= [
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Saying that Java is nice because it works on every OS is like saying that anal sex is nice because it works on every gender.",
+            "flags": {
+                "nsfw": true,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": true
+            },
+            "id": 30,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "A byte walks into a bar looking miserable.\nThe bartender asks it: \"What's wrong buddy?\"\n\"Parity error.\" it replies. \n\"Ah that makes sense, I thought you looked a bit off.\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 24,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Being a self-taught developer is almost the same as being a cut neck chicken because you have no sense of direction in the beginning.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 184,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Debugging is like being the detective in a crime movie where you're also the murderer at the same time.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 42,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 23,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "The six stages of debugging:\n1. That can't happen.\n2. That doesn't happen on my machine.\n3. That shouldn't happen.\n4. Why does that happen?\n5. Oh, I see.\n6. How did that ever work?",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 123,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "A man is smoking a cigarette and blowing smoke rings into the air. His girlfriend becomes irritated with the smoke and says \"Can't you see the warning on the cigarette pack? Smoking is hazardous to your health!\" to which the man replies, \"I am a programmer.  We don't worry about warnings; we only worry about errors.\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 38,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Today I learned that changing random stuff until your program works is \"hacky\" and a \"bad coding practice\" but if you do it fast enough it's \"Machine Learning\" and pays 4x your current salary.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 33,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "UDP is better in the COVID era since it avoids unnecessary handshakes.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 259,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Eight bytes walk into a bar.\nThe bartender asks, \"Can I get you anything?\"\n\"Yeah,\" reply the bytes.\n\"Make us a double.\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 34,
+            "safe": true,
+            "lang": "en"
+        }
+
+        
+    ]
+    let index = Math.floor(Math.random() * (myjokes.length-1))
+    console.log(index)
+    joke.innerHTML = myjokes[index].joke
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,28 @@
+<script>
+
+    let a = Math.random() * 100;
+    a = Number.parseInt(a)
+    let inp;
+    let score = 100;
+    while (inp != a) {
+        // score = score - 1;
+        inp = prompt("enter a number");
+
+        if (inp == a) {
+            console.log("congrats you have enter a correct number")
+        }
+
+        else if (inp > a && inp < 100) {
+            console.log("your number is grater")
+        }
+
+        else if (inp < a && inp > 0) {
+            console.log("you number is smaller")
+        }
+
+        else {
+            console.log("enter number b/w 1 to 100")
+        }
+
+    }
+</script>

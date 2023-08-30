@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom cursor</title>
+    <link rel="stylesheet" href="Custom cursor.css">
+</head>
+<body>
+    <div id="main">
+
+        <div class="cursor"></div>
+        <h1>rohan</h1>
+    </div>
+</body>
+
+<script>
+let main = document.querySelector("#main")
+let crsr =document.querySelector(".cursor")
+
+crsr.style.backbgroundColor = "red"
+
+main.addEventListener("mousemove",function(e){
+    // console.log("e")
+    crsr.style.left = e.x+"px"
+    crsr.style.top = e.y+"px"
+
+})
+
+</script>
+</html>

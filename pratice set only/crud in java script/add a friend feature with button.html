@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add a friend feature with button</title>
+    <link rel="stylesheet" href="add a friend feature with button.css">
+</head>
+
+<body>
+    <div id="card">
+        <img src="https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVsfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="" srcset="">
+        <h1>Angle</h1>
+        <h5>Stranger</h5>
+        <div id="btn_container">
+            <button id="add">Add Friend</button>
+            <!-- <button id="remove">Remove Friend</button> -->
+        </div>
+    </div>
+</body>
+
+<script>
+    // let istatus = document.querySelector("h5")
+
+    // let addFriend = document.querySelector("#add")
+    // let removeFriend = document.querySelector("#remove")
+
+    // addFriend.addEventListener("click",function(){
+    //     istatus.innerHTML = "Friends"
+    //     istatus.style.color = "green"
+    // })
+    // removeFriend.addEventListener("click",function(){
+    //     istatus.innerHTML = "Stranger"
+    //     istatus.style.color = "red"
+    // })
+</script>
+
+<!-- when i use only one button for both opraction  -->
+
+<script>
+    let istatus = document.querySelector("h5")
+    let btn = document.querySelector("#add")
+    let removeFriend = document.querySelector("#remove")
+
+    let check = 0
+    btn.addEventListener("click",function(e){
+        if(check == 0){
+            istatus.innerHTML = "Friend"
+            istatus.style.color = "green"
+            console.log(e)
+            check = 1
+        }
+        else{
+            istatus.innerHTML = "Stranger"
+            istatus.style.color = "red"
+            console.log(e)
+            check = 0
+        }
+    })
+</script>
+
+<!-- <script>
+    let istatus = document.querySelector("h5")
+    let btn = document.querySelector("#add")
+
+    let removeFriend = document.querySelector("#remove")
+
+    let check = 0
+    btn.addEventListener("click", function(e) 
+    {
+        if (check == 0) {
+            istatus.innerHTML = "Friends"
+            istatus.style.color = "green"
+            btn.innerHTML = "Remove Friend"
+            // console.log("done")
+            check = 1
+        }
+        else {
+            istatus.innerHTML = "Stranger"
+            istatus.style.color = "red"
+            btn.innerHTML = "Add Friend"
+            // console.log("done")
+            check = 0
+        }
+    })
+</script> -->
+
+
+</html>

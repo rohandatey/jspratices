@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple image hovering animation</title>
+    <link rel="stylesheet" href="multiple image hovering animation.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="elem1" class="elem">
+            <h1>Oppenheminer</h1>
+            <img src="https://images.unsplash.com/photo-1693245601085-5271ed3261e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="elem">
+            <h1>Black Knight</h1>
+            <img src="https://images.unsplash.com/photo-1682686580186-b55d2a91053c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="elem">
+            <h1>MoneyHeist</h1>
+            <img src="https://images.unsplash.com/photo-1692297351816-9fa5d0483608?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="elem">
+            <h1>Contra</h1>
+            <img src="https://images.unsplash.com/photo-1692646016596-b5eedeef6070?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+//   let elem = document.querySelectorAll(".elem")
+  //let elemImage = document.querySelector("#elem1 img") 
+
+// elem1.addEventListener("mousemove",function(e){
+//     // console.log("e")
+//     elemImage.style.left = e.x+"px"
+//     elemImage.style.top = e.y+"px"
+// })
+
+// elem1.addEventListener("mouseenter",function(e){
+//     // console.log("e")
+//     elemImage.style.opacity = 1
+// })
+
+// elem1.addEventListener("mouseleave",function(e){
+//     // console.log("e")
+//     elemImage.style.opacity = 0
+// })
+let elem = document.querySelectorAll(".elem")
+elem.forEach(function(let){
+    let.addEventListener("mouseenter",function(){
+        console.log("enter")
+        let .style.backgroundColor="red"
+    })
+    let.addEventListener("mouseleave",function(){
+        console.log("leave")
+        let.style.backgroundColor="transprant"
+
+    })
+})
+
+
+</script>
+
+</html>

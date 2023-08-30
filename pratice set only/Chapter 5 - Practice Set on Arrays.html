@@ -1,0 +1,78 @@
+<script>
+    // Q1
+
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 85]
+    // let a = prompt("enter a number")
+    // a = Number.parseInt(a)
+    // arr.push(a)
+    // console.log(arr);
+
+    // Q2
+
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 85]
+    // let a;
+    // do {
+    //     a = prompt("enter a number")
+    //     a = Number.parseInt(a)
+    //     arr.push(a)
+    // }
+    // while (a != 0);
+    // console.log(arr);
+
+// Q3
+
+// let arr = [1, 2, 3, 4, 50, 60, 70, 850]
+// let n =arr.filter((x)=>{
+//     return x%10 == 0
+// })
+// console.log(n)
+
+// Q4
+
+// let arr = [1, 2, 3, 4, 50, 60, 70, 850]
+// let n =arr.map((x)=>{
+//     return x*x 
+// })
+// console.log(n)
+
+// Q5
+
+// let arr = [1, 2, 3, 4]
+// let n = arr.reduce((x1,x2)=>{
+
+//     return x1*x2
+// })
+// console.log(n)
+
+// Q6. here i m going to use the map and arrow method
+
+let employeeList = [ 
+
+{first_name:"Eleanor", last_name:"Bolton", designation:"CEO, Co-Founder", tags: ["Finance","San Francisco", "Mentor", "Top Management"], age:45},
+
+{first_name:"Caspian", last_name:"Shields", designation:"CTO, Co-Founder", tags:["Engineering","San Francisco", "Mentor", "Top Management"], age:34},
+
+{first_name:"Marek", last_name:"Goodman", designation:"CFO", tags:["Operations","New York", "Mentor", "Top Management"], age:31},
+                         
+{first_name:"Lisa", last_name:"Whitehouse", designation:"CMO", tags:["People","San Francisco", "Mentor", "Top Management"], age:39},
+
+{first_name:"Buster", last_name:"Mackenzi", designation:"COO", tags:["Product","New York", "Mentor", "Top Management"], age:43}
+                       
+];
+
+// Print first name, last name and designation of every employee on the list (here i use arrow function)
+
+employeeList.forEach( ({first_name,last_name,designation})=>
+{
+    
+console.log(`${first_name} ${last_name} is the ${designation}`)
+})
+
+// Add "name" property to all the objects in the list
+
+employeeList = employeeList.map( (employee) =>{
+
+return {employee,name:employee.first_name + "" + employee.last_name}})
+console.log(employeeList)
+
+</script>
